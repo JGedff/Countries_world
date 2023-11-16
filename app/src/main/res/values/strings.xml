@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AC02 Countries of the world</string>
+    <string name="name">Name:</string>
+    <string name="continent">Continent:</string>
+    <string name="capital">Capital:</string>
+    <string name="phone_code">Phone Code:</string>
+    <string name="code2">Code 2:</string>
+    <string name="code3">Code 3:</string>
+    <string name="tld">Web domain:</string>
+    <string name="km">Square kilometers:</string>
+    <string name="emoji">Emote:</string>
+    <string name="favorite">Favorite:</string>
+</resources>
