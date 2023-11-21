@@ -2,17 +2,16 @@ package com.example.ac02paisesdelmundo
 
 import android.content.Intent
 import android.content.pm.ActivityInfo
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.widget.Button
+import android.view.Menu
+import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.ac02paisesdelmundo.adapters.countryAdapter
 import com.example.ac02paisesdelmundo.classes.Pais
 import com.example.ac02paisesdelmundo.classes.Paises
 import com.google.gson.Gson
-import java.util.Locale
 
 class MainActivity : AppCompatActivity() {
     lateinit var myRecyclerView : RecyclerView
@@ -22,6 +21,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        supportActionBar?.title = ""
 
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
 
@@ -42,38 +43,16 @@ class MainActivity : AppCompatActivity() {
     }
 
     // creamos el menú.
-    /*    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-            // Inflate the menu; this adds items to the action bar if it is present.
-            menuInflater.inflate(R.menu.menu_actinobar, menu)
-            return true
-        }
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        menuInflater.inflate(R.menu.main_menu, menu)
+        return true
+    }
 
-        // gestionamos el menú
-        override fun onOptionsItemSelected(item: MenuItem): Boolean {
-            // creamos un nuevo alumno aleatorio
-            val nombre: String = randomUtils.randomString(20)
-            val apellido: String = randomUtils.randomString(30)
-            val edad: Int = randomUtils.randomInteger(16,35)
-
-            when (item.itemId) {
-                R.id.miNew -> {
-                    mlAlumno.add(cAlumno(nombre, apellido, edad))
-                    mAdapter.update(mlAlumno)
-                }
-                R.id.init -> {
-                    mlAlumno.add(0, cAlumno(nombre, apellido, edad))
-                    mAdapter.update(mlAlumno)
-                }
-                R.id.mid -> {
-                    val size: Int = mlAlumno.count()
-                    val index: Int = size / 2
-
-                    mlAlumno.add(index, cAlumno(nombre, apellido, edad))
-                    mAdapter.update(mlAlumno)
-                }
-            }
-            return(super.onOptionsItemSelected(item));
-        }*/
+    // gestionamos el menú
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return(super.onOptionsItemSelected(item));
+    }
 
     fun getPaises(): MutableList<Pais> {
         val paises:MutableList<Pais>
@@ -87,4 +66,10 @@ class MainActivity : AppCompatActivity() {
 
         return paises
     }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        mAdapter.onActivityResult(requestCode, resultCode, data!!)
+    }
+
 }

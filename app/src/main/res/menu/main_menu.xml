@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/order_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/order"
+        app:showAsAction="ifRoom">
+        <menu
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <item
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:title="@string/none" />
+            <item
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:title="Capital">
+                <menu
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <item
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:title="FALSE" />
+                    <item
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:title="TRUE" />
+                </menu>
+            </item>
+            <item
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:title="Country">
+                <menu
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <item
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:title="FALSE" />
+                    <item
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:title="TRUE" />
+                </menu>
+            </item>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/continent_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/country"
+        app:showAsAction="ifRoom">
+        <menu
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <item
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:title="@string/none" />
+            <item
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:title="@string/africa" />
+            <item
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:title="@string/antarctica" />
+            <item
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:title="@string/n_america" />
+            <item
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:title="@string/europe" />
+            <item
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:title="@string/oceania" />
+            <item
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:title="@string/s_america" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/favorite_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/favorite"
+        app:showAsAction="always" >
+        <menu
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <item
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:title="NONE" />
+            <item
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:title="TRUE" />
+            <item
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:title="FALSE" />
+        </menu>
+    </item>
+</menu>

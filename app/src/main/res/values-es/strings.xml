@@ -10,5 +10,14 @@
     <string name="tld">Dominio web:</string>
     <string name="km">Kilómetros cuadrados:</string>
     <string name="emoji">Emoticono:</string>
-    <string name="favorite">Favorito:</string>
+    <string name="favorite">Favorito</string>
+    <string name="country">País</string>
+    <string name="order">Ordre</string>
+    <string name="africa">África</string>
+    <string name="europe">Europa</string>
+    <string name="oceania">Oceanía</string>
+    <string name="n_america">América del norte</string>
+    <string name="antarctica">Antártida</string>
+    <string name="s_america">Sudamerica</string>
+    <string name="none">Ninguno</string>
 </resources>

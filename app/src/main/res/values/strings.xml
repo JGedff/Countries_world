@@ -9,5 +9,14 @@
     <string name="tld">Web domain:</string>
     <string name="km">Square kilometers:</string>
     <string name="emoji">Emote:</string>
-    <string name="favorite">Favorite:</string>
+    <string name="favorite">Favorite</string>
+    <string name="country">Country</string>
+    <string name="order">Order</string>
+    <string name="africa">Africa</string>
+    <string name="europe">Europe</string>
+    <string name="oceania">Oceania</string>
+    <string name="n_america">North America</string>
+    <string name="antarctica">Antarctica</string>
+    <string name="s_america">South America</string>
+    <string name="none">None</string>
 </resources>
