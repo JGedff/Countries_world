@@ -13,22 +13,20 @@
             <item
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:title="@string/none" />
-            <item
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:title="Capital">
                 <menu
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                     <item
+                        android:id="@+id/asc_capital"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:title="FALSE" />
+                        android:title="@string/filter_up" />
                     <item
+                        android:id="@+id/desc_capital"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:title="TRUE" />
+                        android:title="@string/filter_down" />
                 </menu>
             </item>
             <item
@@ -39,13 +37,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                     <item
+                        android:id="@+id/asc_country"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:title="FALSE" />
+                        android:title="@string/filter_up" />
                     <item
+                        android:id="@+id/desc_country"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:title="TRUE" />
+                        android:title="@string/filter_down" />
                 </menu>
             </item>
         </menu>
@@ -60,30 +60,37 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <item
+                android:id="@+id/no_filter_continent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:title="@string/none" />
             <item
+                android:id="@+id/filter_africa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:title="@string/africa" />
             <item
+                android:id="@+id/filter_antarctica"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:title="@string/antarctica" />
             <item
+                android:id="@+id/filter_n_america"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:title="@string/n_america" />
             <item
+                android:id="@+id/filter_europe"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:title="@string/europe" />
             <item
+                android:id="@+id/filter_oceania"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:title="@string/oceania" />
             <item
+                android:id="@+id/filter_s_america"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:title="@string/s_america" />
@@ -99,17 +106,20 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
             <item
+                android:id="@+id/no_favorite"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:title="NONE" />
+                android:title="@string/none" />
             <item
+                android:id="@+id/filter_favorite"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:title="TRUE" />
+                android:title="@string/filter_favorite" />
             <item
+                android:id="@+id/filter_no_favorite"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:title="FALSE" />
+                android:title="@string/filter_no_favorite" />
         </menu>
     </item>
 </menu>

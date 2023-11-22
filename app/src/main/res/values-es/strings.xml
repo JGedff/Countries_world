@@ -20,4 +20,8 @@
     <string name="antarctica">Antártida</string>
     <string name="s_america">Sudamerica</string>
     <string name="none">Ninguno</string>
+    <string name="filter_up">Ascendente</string>
+    <string name="filter_down">Descendente</string>
+    <string name="filter_favorite">Favoritos</string>
+    <string name="filter_no_favorite">No favoritos</string>
 </resources>

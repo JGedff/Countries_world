@@ -56,14 +56,14 @@ class countryAdapter: RecyclerView.Adapter<countryAdapter.ViewHolder>() {
         val imvLink = view.findViewById<ImageView>(R.id.imvLink)
 
         fun bind(pais: Pais, context: Context) {
-            if (Locale.getDefault().language == "en") {
-                name.text = pais.nameEn
-                continent.text = pais.continentEn
-                capital.text = pais.capitalEn
-            } else {
+            if (Locale.getDefault().language == "es") {
                 name.text = pais.nameEs
                 continent.text = pais.continentEs
                 capital.text = pais.capitalEs
+            } else {
+                name.text = pais.nameEn
+                continent.text = pais.continentEn
+                capital.text = pais.capitalEn
             }
 
             phoneCode.text = pais.dialCode

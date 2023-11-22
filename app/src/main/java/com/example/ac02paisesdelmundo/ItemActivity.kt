@@ -7,6 +7,8 @@ import android.graphics.Typeface
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
@@ -70,14 +72,14 @@ class ItemActivity : AppCompatActivity() {
         val imvFavorite = findViewById<ImageView>(R.id.imvFavorite)
         val card = findViewById<CardView>(R.id.card)
 
-        if (Locale.getDefault().language == "en") {
-            tv_name.text = nameEn
-            tv_continent.text = continentEn
-            tv_capital.text = capitalEn
-        } else {
+        if (Locale.getDefault().language == "es") {
             tv_name.text = nameEs
             tv_continent.text = continentEs
             tv_capital.text = capitalEs
+        } else {
+            tv_name.text = nameEn
+            tv_continent.text = continentEn
+            tv_capital.text = capitalEn
         }
 
         tv_phoneCode.text = dialCode
@@ -136,7 +138,22 @@ class ItemActivity : AppCompatActivity() {
         })
     }
 
-    fun endIntent(view: View) {
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        menuInflater.inflate(R.menu.item_menu, menu)
+        return true
+    }
+
+    // gestionamos el menú
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.go_back -> endIntent()
+        }
+
+        return (super.onOptionsItemSelected(item))
+    }
+
+    fun endIntent() {
         var intent: Intent = Intent()
 
         intent.putExtra("favorite", favorite)
